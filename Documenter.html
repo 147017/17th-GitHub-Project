@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Documenter</title>
+        <link rel="icon" type="image/x-icon" href="Icon.ico">
+        <script src="Documenter.js"></script>
+
+        <style>
+            input{
+                color : white;
+            }
+            ::placeholder /*For Google chrome, Firefox, Opera, Safari 10.1+*/{
+                color: white;
+                opacity: 1;
+            }
+  
+            :-ms-input-placeholder /*For Internet explorer (10-11)*/{
+                color: white;
+              }
+  
+            ::-ms-input-placeholder /*For Microsft edge*/{
+                color: white;
+              }
+            textarea{
+                text-align: justify !important;
+            }
+        </style>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <center>
+        <h1>Documenter (Auto-Save enabled)</h1>
+        <input class="btn btn-info" id="Name" type="text" placeholder="Document name" oninput="save();">
+        <br>
+        <br>
+        <textarea class="btn btn-success" col="50" rows="20" id="Doc" type="text" placeholder="Type your document here." oninput="save();"></textarea>
+        </center>
+    </body>
+</html>
